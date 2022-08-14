@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: 'Lato', 'Times', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #787A80;
+  background-color: #fff;
+}
+
+a {
+  color: #424551;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.button {
+  padding: 0px 40px;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+}
+
+.header {
+  background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+}
+
+.header__nav {
+  padding: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: minmax(100px, 130px) 1fr auto;
+  align-items: center;
+  justify-content: start;
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+}
+
+.header__menu {
+  margin-left: 60px;
+}
+
+.header__item {
+  display: inline;
+  margin-right: 40px;
+}
+
+.header__item {
+  margin-right: 20px;
+}
+
+.header__link {
+  transition: all 0.1s ease-in-out;
+}
+
+.header__link:hover {
+  color: #1c1d1e;
+}
+
+.header__button {
+  margin-right: 36px;
+}
+
+.header__login {
+  position: relative;
+  padding-left: 26px;
+}
+
+.header__login::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/header/login.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 18px;
+  margin: auto 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.header__burger {
+  display: none;
+}
