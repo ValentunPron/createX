@@ -113,7 +113,7 @@ a {
 }
 
 .button:hover {
-  background: linear-gradient(45deg, #f77d36 0%, #ef0800 100%);
+  background: linear-gradient(45deg, rgba(247, 125, 54, 0.7) 0%, rgba(239, 8, 0, 0.7) 100%);
 }
 
 .button:active {
@@ -121,15 +121,83 @@ a {
 }
 
 .button--trans {
-  padding: 0px 35px;
+  padding: 0px 40px;
   border-radius: 4px;
   border: 2px solid #F75E05;
   background: transparent;
   color: #F75E05;
   font-weight: 700;
   font-size: 16px;
-  line-height: 52px;
+  line-height: 49px;
   letter-spacing: 0.5px;
+  transition: all .1s ease-in-out;
+}
+
+.button--trans:hover {
+  background: linear-gradient(45deg, rgba(247, 125, 54, 0.3) 0%, rgba(239, 8, 0, 0.3) 100%);
+}
+
+.button--trans:active {
+  color: #000;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.header__burger:hover {
+  opacity: 0.6;
+}
+
+.header__burger span {
+  background-color: #f77d36;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.header__burger::before {
+  content: '';
+  background-color: #f77d36;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+
+.header__burger::after {
+  content: '';
+  background-color: #f77d36;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.header__burger.active::before {
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__burger.active::after {
+  background-color: #fff;
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__menu.active {
+  right: 0px;
 }
 
 .header {
@@ -159,10 +227,26 @@ a {
   content: '';
   background-image: url("../img/bg/arrow.svg");
   background-repeat: repeat;
+  transform: rotate(-140deg);
+  width: 110px;
+  height: 160px;
+  top: 110px;
+  left: -25%;
+}
+
+.header__nav::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/bg/arrow.svg");
+  background-repeat: repeat;
   width: 110px;
   height: 160px;
   top: -40px;
   right: -20%;
+}
+
+.header__logo {
+  z-index: 10;
 }
 
 .header__menu {
@@ -201,7 +285,7 @@ a {
   position: absolute;
   background-image: url("../img/header/login.svg");
   background-repeat: no-repeat;
-  width: 17px;
+  width: 17.5px;
   height: 18px;
   margin: auto 0;
   left: 0;
@@ -240,11 +324,24 @@ a {
 }
 
 .header__title {
+  position: relative;
   margin-top: 22px;
   max-width: 500px;
   font-weight: 900;
   font-size: 64px;
   line-height: 130%;
+  z-index: 6;
+}
+
+.header__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg/shapes.svg");
+  right: -5px;
+  bottom: 30px;
+  width: 88px;
+  height: 47px;
+  z-index: -2;
 }
 
 .header__img {
@@ -252,6 +349,7 @@ a {
 }
 
 .header__buttons {
+  position: relative;
   margin-top: 60px;
 }
 
@@ -259,7 +357,17 @@ a {
   margin-left: 24px;
 }
 
-.header__bottom {
+.header__buttons::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg/shape.svg");
+  right: 60px;
+  bottom: -275%;
+  width: 61px;
+  height: 61px;
+}
+
+.header__static {
   margin-top: 188px;
   padding-bottom: 97px;
 }
