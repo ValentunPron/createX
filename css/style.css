@@ -141,14 +141,11 @@ a {
   color: #000;
 }
 
-<<<<<<< HEAD
-=======
 .button-link {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
->>>>>>> df3ac6c (test)
 .lock {
   overflow: hidden;
 }
@@ -211,23 +208,10 @@ a {
 .subtitle {
   font-weight: 700;
   font-size: 16px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> df3ac6c (test)
-  line-height: 150%;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #1E212C;
-<<<<<<< HEAD
-=======
-=======
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #1E212C;
   margin-bottom: 8px;
->>>>>>> 4c6b687 (block courses)
->>>>>>> df3ac6c (test)
 }
 
 .title {
@@ -537,15 +521,7 @@ a {
 
 .why-we__list {
   margin-top: 40px;
-<<<<<<< HEAD
-  color: #424551;
-=======
-<<<<<<< HEAD
-  color: #424551;
-=======
   color: #424551 margin;
->>>>>>> 4c6b687 (block courses)
->>>>>>> df3ac6c (test)
 }
 
 .why-we__item {
@@ -597,10 +573,6 @@ a {
   background-image: url("../img/why-we/bg1.svg");
   background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
 .courses {
   margin-top: 180px;
@@ -687,5 +659,3 @@ a {
 .management {
   background: #5A87FC;
 }
->>>>>>> 4c6b687 (block courses)
->>>>>>> df3ac6c (test)
