@@ -588,7 +588,6 @@ a {
 
 .courses__item {
   display: inline-flex;
-  align-items: center;
   background: #FFFFFF;
   border: 1px solid #E5E8ED;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
@@ -597,7 +596,7 @@ a {
 }
 
 .courses__description {
-  margin: 32px;
+  margin: 27px;
 }
 
 .courses__type {
@@ -631,15 +630,15 @@ a {
 
 .courses__name {
   position: relative;
-  padding-left: 9px;
+  padding-left: 10px;
 }
 
-.courses__name::after {
+.courses__name::before {
   content: '';
   position: absolute;
-  width: 1px;
+  width: 2px;
   height: 16px;
-  border: 1px solid #787A80;
+  background-color: #787A80;
   margin: auto 0;
   top: 0;
   bottom: 0;
@@ -658,4 +657,12 @@ a {
 
 .management {
   background: #5A87FC;
+}
+
+.recruting {
+  background: #F89828;
+}
+
+.design {
+  background: #F52F6E;
 }
