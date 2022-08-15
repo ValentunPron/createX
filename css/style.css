@@ -210,7 +210,6 @@ a {
 }
 
 .title {
-  font-family: 'Lato';
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -494,13 +493,21 @@ a {
 }
 
 .why-we {
+  position: relative;
   margin-top: 180px;
+  z-index: 6;
 }
 
 .why-we__body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.why-we__img {
+  position: relative;
+  z-index: 5;
 }
 
 .why-we__description {
@@ -527,7 +534,7 @@ a {
   background-image: url("../img/why-we/dots.svg");
   width: 16px;
   height: 16px;
-  top: 6px;
+  top: 6%;
   left: -30px;
 }
 
@@ -537,4 +544,27 @@ a {
 
 .why-we__button {
   margin-top: 48px;
+}
+
+.why-we::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 290px;
+  left: 0px;
+  top: 60px;
+  background-image: url("../img/why-we/bg2.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.why-we::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 290px;
+  right: 0px;
+  bottom: 0;
+  background-image: url("../img/why-we/bg1.svg");
+  background-repeat: no-repeat;
 }
