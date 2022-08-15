@@ -576,7 +576,6 @@ a {
 
 .courses {
   margin-top: 180px;
-  margin-bottom: 180px;
 }
 
 .courses__body {
@@ -630,6 +629,9 @@ a {
 
 .courses__name {
   position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
   padding-left: 10px;
 }
 
