@@ -141,6 +141,14 @@ a {
   color: #000;
 }
 
+<<<<<<< HEAD
+=======
+.button-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+>>>>>>> df3ac6c (test)
 .lock {
   overflow: hidden;
 }
@@ -203,10 +211,23 @@ a {
 .subtitle {
   font-weight: 700;
   font-size: 16px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> df3ac6c (test)
   line-height: 150%;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #1E212C;
+<<<<<<< HEAD
+=======
+=======
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 8px;
+>>>>>>> 4c6b687 (block courses)
+>>>>>>> df3ac6c (test)
 }
 
 .title {
@@ -516,7 +537,15 @@ a {
 
 .why-we__list {
   margin-top: 40px;
+<<<<<<< HEAD
   color: #424551;
+=======
+<<<<<<< HEAD
+  color: #424551;
+=======
+  color: #424551 margin;
+>>>>>>> 4c6b687 (block courses)
+>>>>>>> df3ac6c (test)
 }
 
 .why-we__item {
@@ -568,3 +597,95 @@ a {
   background-image: url("../img/why-we/bg1.svg");
   background-repeat: no-repeat;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+.courses {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.courses__body {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.courses__item {
+  display: inline-flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  max-height: 214px;
+}
+
+.courses__description {
+  margin: 32px;
+}
+
+.courses__type {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 1px 8px;
+  background: #03CEA4;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin-bottom: 21px;
+}
+
+.courses__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 20px;
+}
+
+.courses__price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FF4242;
+  margin-bottom: 20px;
+  margin-right: 8px;
+}
+
+.courses__name {
+  position: relative;
+  padding-left: 9px;
+}
+
+.courses__name::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  border: 1px solid #787A80;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.courses-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.marketing {
+  background: #03CEA4;
+}
+
+.management {
+  background: #5A87FC;
+}
+>>>>>>> 4c6b687 (block courses)
+>>>>>>> df3ac6c (test)
