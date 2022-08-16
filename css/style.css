@@ -206,19 +206,23 @@ a {
 }
 
 .subtitle {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #1E212C;
   margin-bottom: 8px;
+  z-index: 4;
 }
 
 .title {
+  position: relative;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
   color: #1E212C;
+  z-index: 4;
 }
 
 .header {
@@ -460,6 +464,11 @@ a {
   margin-left: 2px;
 }
 
+.static {
+  position: relative;
+  z-index: 1;
+}
+
 .static__list {
   display: flex;
   justify-content: space-between;
@@ -500,7 +509,7 @@ a {
 .why-we {
   position: relative;
   margin-top: 180px;
-  z-index: 6;
+  z-index: 5;
 }
 
 .why-we__body {
@@ -667,4 +676,76 @@ a {
 
 .design {
   background: #F52F6E;
+}
+
+.benefist {
+  margin-top: 180px;
+  text-align: center;
+}
+
+.benefist__active {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.benefist__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #9A9CA5;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 10px 0;
+  transition: all .4s ease-in-out;
+}
+
+.benefist__button svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 8.1px;
+  fill: #9A9CA5;
+}
+
+.benefist__body {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  transition: all 7s ease-in-out;
+}
+
+.benefist__body.active {
+  display: inline-flex;
+}
+
+.benefist__description {
+  text-align: left;
+}
+
+.benefist__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1E212C;
+  margin-bottom: 24px;
+}
+
+.benefist__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.benefist__button--active {
+  border: 2px solid #FF3F3A;
+  color: #FF3F3A;
+  border-radius: 4px;
+}
+
+.benefist__button--active svg {
+  fill: #FF3F3A;
 }

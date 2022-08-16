@@ -402,10 +402,10 @@
     margin-left: 7px;
   }
   .header__item {
-    margin-right: 22.5px;
+    margin-right: 0px;
   }
   .header__item:last-child {
-    margin-right: 15px;
+    margin-right: 0px;
   }
   .header__login {
     padding-left: 22.5px;
@@ -647,13 +647,14 @@
   }
   .why-we {
     margin-top: 50px;
+    text-align: center;
   }
   .why-we__body {
+    text-align: center;
     justify-content: center;
   }
   .why-we__description {
     max-width: 350px;
-    text-align: center;
   }
   .why-we__list {
     margin-top: 30px;
@@ -669,9 +670,7 @@
   }
   .why-we__item::after {
     top: -20px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    left: 45%;
   }
   .why-we__button {
     display: inline;
