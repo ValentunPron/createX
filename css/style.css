@@ -709,6 +709,15 @@ a {
   fill: #9A9CA5;
 }
 
+.benefist__button:hover {
+  color: #FF3F3A;
+  opacity: 0.75;
+}
+
+.benefist__button:hover svg {
+  fill: #FF3F3A;
+}
+
 .benefist__body {
   display: none;
   justify-content: space-between;
