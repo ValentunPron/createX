@@ -202,6 +202,49 @@
     width: 2px;
     height: 16px;
   }
+  .benefist {
+    margin-top: 150px;
+  }
+  .benefist__active {
+    margin-top: 60px;
+  }
+  .benefist__button {
+    font-size: 14px;
+    line-height: 140%;
+    padding: 9px 0;
+  }
+  .benefist__button svg {
+    width: 13px;
+    height: 13px;
+    margin-right: 7.1px;
+  }
+  .benefist__body {
+    display: none;
+    margin-top: 70px;
+    transition: all 2s ease-in-out;
+  }
+  .benefist__title {
+    font-size: 28px;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+  .benefist__text {
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 400px;
+  }
+  .benefist img {
+    width: 450px;
+    height: 410px;
+  }
+  .benefist__button--active {
+    border: 2px solid #FF3F3A;
+    color: #FF3F3A;
+    border-radius: 4px;
+  }
+  .benefist__button--active svg {
+    fill: #FF3F3A;
+  }
 }
 
 @media (max-width: 900px) {
@@ -355,6 +398,49 @@
   .courses__name::before {
     width: 2px;
     height: 16px;
+  }
+  .benefist {
+    margin-top: 120px;
+  }
+  .benefist__active {
+    margin-top: 50px;
+  }
+  .benefist__button {
+    font-size: 13px;
+    line-height: 130%;
+    padding: 8px 0;
+  }
+  .benefist__button svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+  }
+  .benefist__body {
+    display: none;
+    margin-top: 65px;
+    transition: all 2s ease-in-out;
+  }
+  .benefist__title {
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 17.5px;
+  }
+  .benefist__text {
+    font-size: 13px;
+    line-height: 130%;
+    max-width: 375px;
+  }
+  .benefist img {
+    width: 400px;
+    height: 400px;
+  }
+  .benefist__button--active {
+    border: 2px solid #FF3F3A;
+    color: #FF3F3A;
+    border-radius: 4px;
+  }
+  .benefist__button--active svg {
+    fill: #FF3F3A;
   }
 }
 
@@ -549,6 +635,49 @@
     font-size: 16px;
     line-height: 140%;
   }
+  .benefist {
+    margin-top: 90px;
+  }
+  .benefist__active {
+    margin-top: 45px;
+  }
+  .benefist__button {
+    font-size: 12px;
+    line-height: 120%;
+    padding: 8px 0;
+  }
+  .benefist__button svg {
+    width: 11px;
+    height: 11px;
+    margin-right: 7px;
+  }
+  .benefist__body {
+    display: none;
+    margin-top: 30px;
+    transition: all 2s ease-in-out;
+  }
+  .benefist__title {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  .benefist__text {
+    font-size: 12px;
+    line-height: 125%;
+    max-width: 300px;
+  }
+  .benefist img {
+    width: 280px;
+    height: 280px;
+  }
+  .benefist__button--active {
+    border: 2px solid #FF3F3A;
+    color: #FF3F3A;
+    border-radius: 4px;
+  }
+  .benefist__button--active svg {
+    fill: #FF3F3A;
+  }
 }
 
 @media (max-width: 540px) {
@@ -731,6 +860,53 @@
     margin: 0 auto;
     margin-top: 10px;
   }
+  .benefist {
+    margin-top: 70px;
+  }
+  .benefist__active {
+    margin-top: 35px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefist__button {
+    font-size: 11px;
+    line-height: 110%;
+    padding: 10px 0;
+  }
+  .benefist__button svg {
+    width: 8px;
+    height: 7px;
+    margin-right: 5px;
+  }
+  .benefist__body {
+    display: none;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: all 2s ease-in-out;
+  }
+  .benefist__title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  .benefist__text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 125%;
+    max-width: 400px;
+  }
+  .benefist img {
+    width: 330px;
+    height: 300px;
+  }
+  .benefist__button--active {
+    border: 1.5px solid #FF3F3A;
+    color: #FF3F3A;
+    border-radius: 4px;
+  }
+  .benefist__button--active svg {
+    fill: #FF3F3A;
+  }
 }
 
 @media (max-width: 374px) {
@@ -780,5 +956,54 @@
     padding: 0px 3px;
     font-size: 9.5px;
     line-height: 26px;
+  }
+  .benefist {
+    margin-top: 50px;
+  }
+  .benefist__active {
+    margin-top: 25px;
+  }
+  .benefist__button {
+    font-size: 11px;
+    line-height: 100%;
+    padding: 10px 0;
+  }
+  .benefist__button svg {
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+  }
+  .benefist__body {
+    margin-top: 25px;
+    transition: all 2s ease-in-out;
+  }
+  .benefist__title-top {
+    margin: 0 auto;
+    line-height: 100%;
+    max-width: 200px;
+  }
+  .benefist__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  .benefist__text {
+    text-align: center;
+    font-size: 10px;
+    line-height: 120%;
+    max-width: 300px;
+  }
+  .benefist img {
+    width: 260px;
+    height: 260px;
+  }
+  .benefist__button--active {
+    border: 1.5px solid #FF3F3A;
+    color: #FF3F3A;
+    border-radius: 4px;
+  }
+  .benefist__button--active svg {
+    fill: #FF3F3A;
   }
 }

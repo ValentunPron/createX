@@ -714,11 +714,11 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 100px;
-  transition: all 7s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .benefist__body.active {
-  display: inline-flex;
+  display: flex;
 }
 
 .benefist__description {
@@ -738,6 +738,7 @@ a {
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+  max-width: 495px;
 }
 
 .benefist__button--active {
