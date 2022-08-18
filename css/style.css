@@ -931,3 +931,89 @@ a {
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
 }
+
+.sliders {
+  background-color: #F4F5F6;
+}
+
+.slider__body {
+  padding-top: 166px;
+}
+
+.team__top {
+  margin-bottom: 60px;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.team__bg {
+  position: relative;
+  background-color: #FFCF2D;
+  padding: 20px 20px 0 20px;
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+  z-index: 2;
+}
+
+.team__bg img {
+  position: relative;
+  z-index: 4;
+}
+
+.team__bg::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  border-radius: 4px;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  z-index: 4;
+}
+
+.team__bg:hover .team__sc {
+  z-index: 5;
+  display: block;
+}
+
+.team__bg:hover::after {
+  opacity: 1;
+}
+
+.team__bg:hover::after img {
+  z-index: 2;
+}
+
+.team__sc {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 20px 0;
+}
+
+.sc__item {
+  display: inline;
+}
+
+.sc__item + .sc__item {
+  margin-left: 15px;
+}
+
+.sc__link svg {
+  fill: #a7a9ad;
+  transition: all 0.4s ease 0s;
+}
+
+.sc__link svg:hover {
+  fill: #fff;
+}
