@@ -197,6 +197,29 @@
 			height: 405px;
 		}
 	}
+	.slider {
+			&__body {
+				padding-top: 145px;
+				padding-bottom: 95px;
+			}
+	}
+	.team { 
+	}
+	.reviews {
+	
+		&__arrow {
+			button {
+				height: 47px;
+				width: 47px;
+			}
+		}
+	
+		&__text {
+			font-size: 14px;
+			line-height: 140%;
+
+		}
+	}
 	
 }
 @media(max-width: 1100px) {
@@ -519,7 +542,114 @@
 			height: 365px;
 		}
 	}
+	.sliders::after {
+		display: none;
+	}
+	.slider {
+			&__body {
+				padding-top: 140px;
+				padding-bottom: 90px;
+			}
+			&__team::after {
+				display: none;
+			}
+	}
+	.team { 
 	
+			&__top {
+				margin-bottom: 50px;
+			}
+	
+			&__arrow {
+				button {
+					height: 47px;
+					width: 47px;
+				}
+			}
+			&__bg {
+				padding: 17.5px 17.5px 0 17.5px;
+			}
+	
+			&__name {
+				margin-top: 14px;
+				font-size: 17px;
+				line-height: 150%;
+			}
+			&__work {
+				font-size: 13px;
+				line-height: 150%;
+			}
+	
+			&__sc {
+				margin: 0 17.5px 17.5px 0;
+			}
+	}
+	.sc {
+			&__item + &__item {
+				margin-left: 12.5px;
+			}
+	}
+	
+	.slider {
+		&__reviews {
+			margin-top: 140px;
+		}
+	}
+	.reviews {
+	
+		&__title-top {
+			margin-bottom: 55px;
+		}
+		&__arrow {
+			button {
+				height: 47px;
+				width: 47px;
+			}
+			.slick-next:hover, .slick-prev:hover {
+				padding: 14px 14px;
+			}
+			.slick-next {
+				margin-right: 10px;
+			}
+			.slick-prev {
+				margin-left: 10px;
+			}
+		}
+		&__item {
+			padding: 50px 80px 50px 100px;
+			text-align: left;
+		}
+	
+		&__text {
+			font-size: 13px;
+			padding-right: 30px;
+			line-height: 140%;
+		}
+		&__info {
+			margin-top: 25px;
+			column-gap: 18px;
+			grid-template-columns: 72px 151px;
+			grid-template-rows: 1fr 1fr;
+			
+		}
+	
+		&__img {
+			border-radius: 100%;
+			width: 60px;
+			height: 60px;
+			margin-right: 17.5px;
+		}
+	
+		&__name {
+			font-size: 15px;
+			line-height: 140%;
+		}
+	
+		&__work {
+			font-size: 13px;
+			line-height: 140%;
+		}
+	}
 }
 @media(max-width: 900px) {
 	.header {

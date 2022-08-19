@@ -169,6 +169,7 @@ a {
 		height: 160px;
 		top: 110px;
 		left: -25%;
+		fill: #424551;
 	}
 	&__nav::after {
 		position: absolute;
@@ -179,6 +180,7 @@ a {
 		height: 160px;
 		top: -40px;
 		right: -20%;
+		fill: #424551;
 	}
 	&__logo {
 		z-index: 10;
@@ -777,9 +779,7 @@ a {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-
 	}
-
 	&__desc {
 		max-width: 392px;
 	}
@@ -807,40 +807,99 @@ a {
 		 rgba(154, 156, 165, 0.08), 0px 4px 4px -4px 
 		 rgba(30, 33, 44, 0.05);
 		border-radius: 4px;
+		z-index: 5;
 	}
 }
-
+.certif::after {
+	position: absolute;
+	content: '';
+	width: 143px;
+	height: 105px;
+	bottom: -17.5%;
+	right: 25%;
+	background-image: url('../img/bg/dots.svg');
+	z-index: 1;
+}
 // ----- Slider -----
 
 .sliders {
-	background-color: #F4F5F6;
+	position: relative;
+	background: #F4F5F7;
 }
-.container {
+.sliders::after {
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 208px;
+	bottom: -10px;
+	right: -30px;
+	background-image: url('../img/bg/circles.svg');
+	background-repeat: no-repeat;
+	transform: rotate(270deg);
 }
 .slider {
 		&__body {
+			position: relative;
 			padding-top: 166px;
-			padding-bottom: 20px;
+			padding-bottom: 100px;
 		}
-
 		&__team {
+			position: relative;
+		}
+		&__team::after {
+			content: '';
+			position: absolute;
+			top: -100px;
+			left: -100px;
+			width: 41px;
+			height: 41px;
+			background-image: url('../img/bg/shape.svg');
 		}
 }
-.team {
+.team { 
 
 		&__top {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
 			margin-bottom: 60px;
-			padding-bottom: 40px;
 		}
 
-		&__dots {
+		&__arrow {
+			button {
+				background-color: transparent;
+				height: 50px;
+				width: 50px;
+				svg {
+					fill: #424551;
+				}
+			}
+			.slick-prev {
+				transition: all 0.4s ease;
+				svg {
+					transition: 0.3s;
+				}
+			}
+			.slick-next {
+				svg {
+					transition: 0.3s;
+					transform: rotate(-180deg);
+				}
+				transition: all 0.2s ease 0s;
+			}
+			.slick-next:hover, .slick-prev:hover {
+				padding: 15px 15px;
+				background: #FF3F3A;
+				border-radius: 100%;
+				svg {
+					fill: #fff;
+				}
+			}
 		}
 
 		&__list {
-			width: 100%;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			justify-content: center;
+			display: flex;
+			justify-content: space-between;
 			text-align: center;
 		}
 		&__bg {
@@ -880,17 +939,20 @@ a {
 				z-index: 2;
 			}
 		}
-		&__item {
-			width: 285px;
-			margin-right: 50px;
-		}
-		&__item:hover {
 
+		&__reviews {
 		}
 		&__name {
+			margin-top: 16px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+			color: #424551;
 		}
-
 		&__work {
+			font-size: 15.5px;
+			line-height: 160%;
+			color: #787A80;
 		}
 
 		&__sc {
@@ -900,6 +962,17 @@ a {
 			right: 0;
 			margin: 0 20px 20px 0;
 		}
+}
+.slick-track {
+	display: flex;
+	justify-content: space-between;
+}
+.slick-slide { 
+	text-align: center;
+	margin: 0 15px;
+}
+.team__bg img {
+	width: 100%;
 }
 .sc {
 
@@ -920,11 +993,143 @@ a {
 			}
 		}
 }
-.facebook {
+
+.slider {
+	&__reviews {
+		margin-top: 180px;
+		text-align: center;
+	}
 }
-.insta {
+.reviews {
+
+	&__title-top {
+		position: relative;
+		margin-bottom: 60px;
+	}
+	&__title-top::after {
+		position: absolute;
+		content: '';
+		width: 145px;
+		height: 145px;
+		top: -100px;
+		left: -200px;
+		background-image: url('../img/bg/circles-full.svg');
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__arrow {
+		button {
+			background-color: transparent;
+			height: 50px;
+			width: 50px;
+			svg {
+				fill: #424551;
+			}
+		}
+		.slick-prev {
+			margin-right: 15px;
+			transition: all 0.4s ease;
+			svg {
+				transition: 0.3s;
+			}
+		}
+		.slick-next {
+			margin-left: 15px;
+			svg {
+				transition: 0.3s;
+				transform: rotate(-180deg);
+			}
+			transition: all 0.2s ease 0s;
+		}
+		.slick-next:hover, .slick-prev:hover {
+			padding: 15px 15px;
+			background: #FF3F3A;
+			border-radius: 100%;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+	&__list {
+		background-color: #fff;
+		box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	&__item {
+		padding: 60px 90px 60px 160px;
+		text-align: left;
+	}
+
+	&__text {
+		position: relative;
+		font-size: 20px;
+		line-height: 150%;
+		color: #424551;
+		width: 752px;
+	}
+	&__text::before {
+		content: '';
+		position: absolute;
+		width: 28px;
+		height: 20px;
+		top: 0;
+		left: -58px;
+		background-image: url('../img/slider/reviews/braces.svg');
+	}
+	&__info {
+		margin-top: 24px;
+		display: grid;
+		align-items: center;
+		column-gap: 20px;
+		grid-template-columns: 72px 151px;
+		grid-template-rows: 1fr 1fr;
+		
+	}
+
+	&__img {
+		border-radius: 100%;
+		grid-row: span 2;
+		margin-right: 20px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 160%;
+		color: #1E212C;
+	}
+
+	&__work {
+		font-size: 14px;
+		line-height: 150%;
+		color: #787A80;
+	}
 }
-.in {
+.slick-dots {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	justify-content: center;
+	transition: all 0.2s ease-out;
+	button {
+		transition: all 0.2s ease-out;
+		font-size: 0px;
+		width: 30px;
+		height: 3px;
+		background: #B3B7BC;
+	}
+	li {
+		margin: 0 12px;
+	}
+	li.slick-active button{
+		background-color: #424551;
+	}
 }
+
 
 

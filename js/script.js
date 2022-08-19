@@ -34,4 +34,29 @@ $(document).ready( () => {
 			}
 		})
 	})
+
+	// Slider 
+
+	// Team 
+	$('.team__list').slick({
+		prevArrow: $('.team__slick-prev'),
+		nextArrow: $('.team__slick-next'),
+		appendArrows: '.team__arrow',
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		variableWidth: false
+	  });
+
+	  // reviews 
+	  $('.reviews__list').slick({
+		prevArrow: $('.reviews__slick-prev'),
+		nextArrow: $('.reviews__slick-next'),
+		dots: true,
+		appendDots:$('.reviews__dots'),
+		autoplay: true,
+		autoplaySpeed: 12000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		speed: 500
+	  });
 })
