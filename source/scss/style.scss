@@ -792,14 +792,13 @@ a {
 	}
 
 	&__images {
+		
 		display: flex;
 		justify-content: space-between;
 		margin-top: 40px;
 	}
-	&__images {
-	}
-
 	&__image {
+		position: relative;
 		border: 1px solid #E5E8ED;
 		box-shadow: 0px 80px 80px -20px
 		 rgba(154, 156, 165, 0.16), 0px 30px 24px -10px 
@@ -807,7 +806,7 @@ a {
 		 rgba(154, 156, 165, 0.08), 0px 4px 4px -4px 
 		 rgba(30, 33, 44, 0.05);
 		border-radius: 4px;
-		z-index: 5;
+		z-index: 10;
 	}
 }
 .certif::after {
@@ -845,6 +844,7 @@ a {
 		}
 		&__team {
 			position: relative;
+			z-index: 5;
 		}
 		&__team::after {
 			content: '';
@@ -867,9 +867,11 @@ a {
 
 		&__arrow {
 			button {
+				position: relative;
 				background-color: transparent;
 				height: 50px;
 				width: 50px;
+				z-index: 10;
 				svg {
 					fill: #424551;
 				}
@@ -888,7 +890,6 @@ a {
 				transition: all 0.2s ease 0s;
 			}
 			.slick-next:hover, .slick-prev:hover {
-				padding: 15px 15px;
 				background: #FF3F3A;
 				border-radius: 100%;
 				svg {
@@ -1022,9 +1023,11 @@ a {
 	}
 	&__arrow {
 		button {
+			position: relative;
 			background-color: transparent;
 			height: 50px;
 			width: 50px;
+			z-index: 10;
 			svg {
 				fill: #424551;
 			}
@@ -1045,7 +1048,6 @@ a {
 			transition: all 0.2s ease 0s;
 		}
 		.slick-next:hover, .slick-prev:hover {
-			padding: 15px 15px;
 			background: #FF3F3A;
 			border-radius: 100%;
 			svg {
@@ -1070,7 +1072,6 @@ a {
 		font-size: 20px;
 		line-height: 150%;
 		color: #424551;
-		width: 752px;
 	}
 	&__text::before {
 		content: '';
@@ -1111,16 +1112,18 @@ a {
 	}
 }
 .slick-dots {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 60px;
 	justify-content: center;
+	z-index: 15;
 	transition: all 0.2s ease-out;
 	button {
 		transition: all 0.2s ease-out;
 		font-size: 0px;
 		width: 30px;
-		height: 3px;
+		height: 4px;
 		background: #B3B7BC;
 	}
 	li {

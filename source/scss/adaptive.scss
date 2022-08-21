@@ -203,24 +203,17 @@
 				padding-bottom: 95px;
 			}
 	}
-	.team { 
-	}
-	.reviews {
-	
-		&__arrow {
-			button {
-				height: 47px;
-				width: 47px;
-			}
+	.team {
+		&__name {
+			margin-top: 16px;
+			font-size: 16px;
+			line-height: 130%;
 		}
-	
-		&__text {
-			font-size: 14px;
+		&__work {
+			font-size: 13.75px;
 			line-height: 140%;
-
 		}
 	}
-	
 }
 @media(max-width: 1100px) {
 	.header {
@@ -542,42 +535,41 @@
 			height: 365px;
 		}
 	}
-	.sliders::after {
-		display: none;
-	}
 	.slider {
 			&__body {
-				padding-top: 140px;
-				padding-bottom: 90px;
+				padding-top: 130px;
+				padding-bottom: 80px;
 			}
 			&__team::after {
 				display: none;
 			}
 	}
-	.team { 
-	
+	.team {
 			&__top {
 				margin-bottom: 50px;
 			}
 	
 			&__arrow {
 				button {
-					height: 47px;
-					width: 47px;
+					background-color: transparent;
+					height: 45px;
+					width: 45px;
+					svg {
+						fill: #424551;
+					}
 				}
 			}
 			&__bg {
 				padding: 17.5px 17.5px 0 17.5px;
 			}
-	
 			&__name {
-				margin-top: 14px;
-				font-size: 17px;
-				line-height: 150%;
+				margin-top: 15px;
+				font-size: 16px;
+				line-height: 130%;
 			}
 			&__work {
 				font-size: 13px;
-				line-height: 150%;
+				line-height: 140%;
 			}
 	
 			&__sc {
@@ -585,11 +577,10 @@
 			}
 	}
 	.sc {
-			&__item + &__item {
-				margin-left: 12.5px;
-			}
+		&__item + &__item {
+			margin-left: 12.5px;
+		}
 	}
-	
 	.slider {
 		&__reviews {
 			margin-top: 140px;
@@ -598,56 +589,63 @@
 	.reviews {
 	
 		&__title-top {
-			margin-bottom: 55px;
+			position: relative;
+			margin-bottom: 50px;
+		}
+		&__title-top::after {
+			top: -100px;
+			left: -150px;
+			background-image: url('../img/bg/circles-full.svg');
 		}
 		&__arrow {
 			button {
-				height: 47px;
-				width: 47px;
-			}
-			.slick-next:hover, .slick-prev:hover {
-				padding: 14px 14px;
-			}
-			.slick-next {
-				margin-right: 10px;
+				height: 45px;
+				width: 45px;
 			}
 			.slick-prev {
-				margin-left: 10px;
+				margin-right: 12px;
 			}
-		}
+			.slick-next {
+				margin-left: 12px;
+			}
+		}	
 		&__item {
-			padding: 50px 80px 50px 100px;
-			text-align: left;
+			padding: 50px 80px 50px 125px;
 		}
 	
 		&__text {
-			font-size: 13px;
-			padding-right: 30px;
+			font-size: 16px;
 			line-height: 140%;
 		}
+		&__text::before {
+			width: 28px;
+			height: 20px;
+			top: 0;
+			left: -58px;
+		}
 		&__info {
-			margin-top: 25px;
-			column-gap: 18px;
-			grid-template-columns: 72px 151px;
-			grid-template-rows: 1fr 1fr;
+			margin-top: 20px;
+			column-gap: 20px;
+			grid-template-columns: 66px 140px;
 			
 		}
 	
 		&__img {
-			border-radius: 100%;
-			width: 60px;
-			height: 60px;
-			margin-right: 17.5px;
+			margin-right: 20px;
 		}
 	
 		&__name {
-			font-size: 15px;
-			line-height: 140%;
+			font-size: 14px;
 		}
 	
 		&__work {
 			font-size: 13px;
-			line-height: 140%;
+		}
+	}
+	.slick-dots {
+		margin-top: 50px;
+		li {
+			margin: 0 12px;
 		}
 	}
 }
@@ -960,6 +958,105 @@
 			height: 300px;
 		}
 	}
+.slider {
+		&__body {
+			padding-top: 100px;
+			padding-bottom: 70px;
+		}
+}
+.team {
+		&__top {
+			margin-bottom: 45px;
+		}
+		&__arrow {
+			button {
+				background-color: transparent;
+				height: 40px;
+				width: 40px;
+			}
+		}
+		&__bg {
+			padding: 15px 15px 0 15px;
+		}
+		&__name {
+			margin-top: 13.5px;
+			font-size: 16px;
+			line-height: 130%;
+		}
+		&__work {
+			font-size: 11px;
+			line-height: 100%;
+		}
+
+		&__sc {
+			margin: 0 15px 15px 0;
+		}
+}
+.sc {
+	&__item + &__item {
+		margin-left: 12.5px;
+	}
+}
+.slider {
+	&__reviews {
+		margin-top: 100px;
+	}
+}
+.reviews {
+
+	&__title-top {
+		position: relative;
+		margin-bottom: 40px;
+	}
+	&__title-top::after {
+		display: none;
+	}
+	&__arrow {
+		button {
+			height: 40px;
+			width: 40px;
+		}
+		.slick-prev {
+			margin-right: 8px;
+		}
+		.slick-next {
+			margin-left: 8px;
+		}
+	}	
+	&__item {
+		padding: 45px 70px 45px 70px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 140%;
+	}
+	&__text::before {
+		width: 28px;
+		height: 20px;
+		top: 0;
+		left: -45px;
+	}
+	&__info {
+		margin-top: 15px;
+		column-gap: 30px;
+		grid-template-columns: 50px 120px;
+		
+	}
+	&__name {
+		font-size: 13px;
+	}
+
+	&__work {
+		font-size: 12px;
+	}
+}
+.slick-dots {
+	margin-top: 30px;
+	li {
+		margin: 0 10px;
+	}
+}
 }
 @media(max-width: 769px) {
 	.header__list {
@@ -1320,6 +1417,116 @@
 			 height: 350px;
 		}
 	}
+	.certif::after {
+		position: absolute;
+		content: '';
+		width: 143px;
+		height: 105px;
+		bottom: -1%;
+		right: 25%;
+		background-image: url('../img/bg/dots.svg');
+		z-index: 1;
+	}
+	.slider {
+		&__body {
+			padding-top: 140px;
+			padding-bottom: 50px;
+		}
+	}
+	.team {
+			&__top {
+				margin-bottom: 35px;
+			}
+			&__arrow {
+				button {
+					background-color: transparent;
+					height: 40px;
+					width: 40px;
+				}
+			}
+			&__bg {
+				padding: 10px 10px 0 10px;
+			}
+			&__name {
+				margin-top: 13px;
+				font-size: 16px;
+				line-height: 130%;
+			}
+			&__work {
+				font-size: 11px;
+				line-height: 100%;
+			}
+
+			&__sc {
+				margin: 0 12px 12px 0;
+			}
+	}
+	.sc {
+		&__item + &__item {
+			margin-left: 12px;
+		}
+	}
+	.slider {
+		&__reviews {
+			margin-top: 70px;
+		}
+	}
+	.reviews {
+
+		&__title-top {
+			margin-bottom: 35px;
+		}
+		&__title-top::after {
+			display: none;
+		}
+		&__arrow {
+			button {
+				height: 36px;
+				width: 36px;
+			}
+			.slick-prev {
+				margin-right: 6px;
+			}
+			.slick-next {
+				margin-left: 6px;
+			}
+		}	
+		&__item {
+			padding: 30px 50px 30px 30px;
+		}
+		&__img {
+			width: 125%;
+
+		}
+		&__text {
+			font-size: 11px;
+			line-height: 135%;
+		}
+		&__text::before {
+			top: 0;
+			background-repeat: no-repeat;
+			left: -25px;
+			background-size: 65%;
+		}
+		&__info {
+			margin-top: 15px;
+			column-gap: 20px;
+			grid-template-columns: 40px 100px;
+		}
+		&__name {
+			font-size: 12px;
+		}
+
+		&__work {
+			font-size: 11px;
+		}
+	}
+	.slick-dots {
+		margin-top: 25px;
+		li {
+			margin: 0 10px;
+		}
+	}
 }
 @media(max-width: 540px) {
 	.container {
@@ -1666,6 +1873,110 @@
 			 rgba(30, 33, 44, 0.05);
 			 width: 350px;
 			 height: 220px;
+		}
+	}
+	.team {
+			&__top {
+				h3 {
+					text-align: center;
+				}
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				margin-bottom: 20px;
+			}
+			&__bg {
+				padding: 4px 4px 0 4px;
+				img {
+					width: 100%;
+				}
+			}
+			&__name {
+				margin-top: 13px;
+				font-size: 14px;
+				line-height: 130%;
+			}
+			&__work {
+				font-size: 10px;
+				line-height: 100%;
+			}
+			&__arrow {
+				margin-top: 25px;
+			}
+			&__sc {
+				margin: 0 5px 5px 0;
+			}
+	}
+	.slider {
+		&__reviews {
+			margin-top: 50px;
+		}
+	}
+	.slick-track {
+		display: flex;
+		justify-content: space-between;
+	}
+	.slick-slide { 
+		text-align: center;
+		margin: 0 7px;
+	}
+	.reviews {
+
+		&__title-top {
+			margin-bottom: 35px;
+		}
+		&__title-top::after {
+			display: none;
+		}
+		&__arrow {
+			display: none;
+			button {
+				height: 30px;
+				width: 30px;
+			}
+			.slick-prev {
+				margin-right: 6px;
+			}
+			.slick-next {
+				margin-left: 6px;
+			}
+		}	
+		&__item {
+			text-align: left;
+			padding: 10px 20px 10px 20px;
+		}
+		&__img {
+			display: none;
+			width: 105%;
+
+		}
+		&__text {
+			font-size: 10px;
+			line-height: 135%;
+		}
+		&__text::before {
+			top: 0;
+			background-repeat: no-repeat;
+			left: -17.5px;
+			background-size: 50%;
+		}
+		&__info {
+			margin-top: 15px;
+			column-gap: 20px;
+			grid-template-columns: 40px 100px;
+		}
+		&__name {
+			font-size: 12px;
+		}
+
+		&__work {
+			font-size: 11px;
+		}
+	}
+	.slick-dots {
+		margin-top: 25px;
+		li {
+			margin: 0 10px;
 		}
 	}
 }

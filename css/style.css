@@ -929,10 +929,11 @@ a {
 }
 
 .certif__image {
+  position: relative;
   border: 1px solid #E5E8ED;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
-  z-index: 5;
+  z-index: 10;
 }
 
 .certif::after {
@@ -971,6 +972,7 @@ a {
 
 .slider__team {
   position: relative;
+  z-index: 5;
 }
 
 .slider__team::after {
@@ -991,9 +993,11 @@ a {
 }
 
 .team__arrow button {
+  position: relative;
   background-color: transparent;
   height: 50px;
   width: 50px;
+  z-index: 10;
 }
 
 .team__arrow button svg {
@@ -1018,7 +1022,6 @@ a {
 }
 
 .team__arrow .slick-next:hover, .team__arrow .slick-prev:hover {
-  padding: 15px 15px;
   background: #FF3F3A;
   border-radius: 100%;
 }
@@ -1154,9 +1157,11 @@ a {
 }
 
 .reviews__arrow button {
+  position: relative;
   background-color: transparent;
   height: 50px;
   width: 50px;
+  z-index: 10;
 }
 
 .reviews__arrow button svg {
@@ -1183,7 +1188,6 @@ a {
 }
 
 .reviews__arrow .slick-next:hover, .reviews__arrow .slick-prev:hover {
-  padding: 15px 15px;
   background: #FF3F3A;
   border-radius: 100%;
 }
@@ -1209,7 +1213,6 @@ a {
   font-size: 20px;
   line-height: 150%;
   color: #424551;
-  width: 752px;
 }
 
 .reviews__text::before {
@@ -1251,10 +1254,12 @@ a {
 }
 
 .slick-dots {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
   justify-content: center;
+  z-index: 15;
   transition: all 0.2s ease-out;
 }
 
@@ -1262,7 +1267,7 @@ a {
   transition: all 0.2s ease-out;
   font-size: 0px;
   width: 30px;
-  height: 3px;
+  height: 4px;
   background: #B3B7BC;
 }
 

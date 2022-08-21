@@ -38,15 +38,35 @@ $(document).ready( () => {
 	// Slider 
 
 	// Team 
-	$('.team__list').slick({
-		prevArrow: $('.team__slick-prev'),
-		nextArrow: $('.team__slick-next'),
-		appendArrows: '.team__arrow',
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		variableWidth: false
-	  });
-
+	if(document.documentElement.clientWidth > 768) {
+		$('.team__list').slick(
+			{
+			prevArrow: $('.team__slick-prev'),
+			nextArrow: $('.team__slick-next'),
+			appendArrows: '.team__arrow',
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			variableWidth: false
+		  });
+	} else if(document.documentElement.clientWidth < 768 && document.documentElement.clientWidth > 500) {
+		$('.team__list').slick(
+			{
+			prevArrow: $('.team__slick-prev'),
+			nextArrow: $('.team__slick-next'),
+			appendArrows: '.team__arrow',
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		  });
+	} else {
+		$('.team__list').slick(
+			{
+			prevArrow: $('.team__slick-prev'),
+			nextArrow: $('.team__slick-next'),
+			appendArrows: '.team__arrow',
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		  });
+	}
 	  // reviews 
 	  $('.reviews__list').slick({
 		prevArrow: $('.reviews__slick-prev'),

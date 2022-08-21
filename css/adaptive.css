@@ -170,12 +170,13 @@
     padding-top: 145px;
     padding-bottom: 95px;
   }
-  .reviews__arrow button {
-    height: 47px;
-    width: 47px;
+  .team__name {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 130%;
   }
-  .reviews__text {
-    font-size: 14px;
+  .team__work {
+    font-size: 13.75px;
     line-height: 140%;
   }
 }
@@ -453,12 +454,9 @@
     width: 520px;
     height: 365px;
   }
-  .sliders::after {
-    display: none;
-  }
   .slider__body {
-    padding-top: 140px;
-    padding-bottom: 90px;
+    padding-top: 130px;
+    padding-bottom: 80px;
   }
   .slider__team::after {
     display: none;
@@ -467,20 +465,24 @@
     margin-bottom: 50px;
   }
   .team__arrow button {
-    height: 47px;
-    width: 47px;
+    background-color: transparent;
+    height: 45px;
+    width: 45px;
+  }
+  .team__arrow button svg {
+    fill: #424551;
   }
   .team__bg {
     padding: 17.5px 17.5px 0 17.5px;
   }
   .team__name {
-    margin-top: 14px;
-    font-size: 17px;
-    line-height: 150%;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 130%;
   }
   .team__work {
     font-size: 13px;
-    line-height: 150%;
+    line-height: 140%;
   }
   .team__sc {
     margin: 0 17.5px 17.5px 0;
@@ -492,49 +494,56 @@
     margin-top: 140px;
   }
   .reviews__title-top {
-    margin-bottom: 55px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .reviews__title-top::after {
+    top: -100px;
+    left: -150px;
+    background-image: url("../img/bg/circles-full.svg");
   }
   .reviews__arrow button {
-    height: 47px;
-    width: 47px;
-  }
-  .reviews__arrow .slick-next:hover, .reviews__arrow .slick-prev:hover {
-    padding: 14px 14px;
-  }
-  .reviews__arrow .slick-next {
-    margin-right: 10px;
+    height: 45px;
+    width: 45px;
   }
   .reviews__arrow .slick-prev {
-    margin-left: 10px;
+    margin-right: 12px;
+  }
+  .reviews__arrow .slick-next {
+    margin-left: 12px;
   }
   .reviews__item {
-    padding: 50px 80px 50px 100px;
-    text-align: left;
+    padding: 50px 80px 50px 125px;
   }
   .reviews__text {
-    font-size: 13px;
-    padding-right: 30px;
+    font-size: 16px;
     line-height: 140%;
+  }
+  .reviews__text::before {
+    width: 28px;
+    height: 20px;
+    top: 0;
+    left: -58px;
   }
   .reviews__info {
-    margin-top: 25px;
-    column-gap: 18px;
-    grid-template-columns: 72px 151px;
-    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+    column-gap: 20px;
+    grid-template-columns: 66px 140px;
   }
   .reviews__img {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    margin-right: 17.5px;
+    margin-right: 20px;
   }
   .reviews__name {
-    font-size: 15px;
-    line-height: 140%;
+    font-size: 14px;
   }
   .reviews__work {
     font-size: 13px;
-    line-height: 140%;
+  }
+  .slick-dots {
+    margin-top: 50px;
+  }
+  .slick-dots li {
+    margin: 0 12px;
   }
 }
 
@@ -800,6 +809,86 @@
     box-shadow: 0px 50px 50px -12.5px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     width: 400px;
     height: 300px;
+  }
+  .slider__body {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .team__top {
+    margin-bottom: 45px;
+  }
+  .team__arrow button {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+  }
+  .team__bg {
+    padding: 15px 15px 0 15px;
+  }
+  .team__name {
+    margin-top: 13.5px;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .team__work {
+    font-size: 11px;
+    line-height: 100%;
+  }
+  .team__sc {
+    margin: 0 15px 15px 0;
+  }
+  .sc__item + .sc__item {
+    margin-left: 12.5px;
+  }
+  .slider__reviews {
+    margin-top: 100px;
+  }
+  .reviews__title-top {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .reviews__title-top::after {
+    display: none;
+  }
+  .reviews__arrow button {
+    height: 40px;
+    width: 40px;
+  }
+  .reviews__arrow .slick-prev {
+    margin-right: 8px;
+  }
+  .reviews__arrow .slick-next {
+    margin-left: 8px;
+  }
+  .reviews__item {
+    padding: 45px 70px 45px 70px;
+  }
+  .reviews__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .reviews__text::before {
+    width: 28px;
+    height: 20px;
+    top: 0;
+    left: -45px;
+  }
+  .reviews__info {
+    margin-top: 15px;
+    column-gap: 30px;
+    grid-template-columns: 50px 120px;
+  }
+  .reviews__name {
+    font-size: 13px;
+  }
+  .reviews__work {
+    font-size: 12px;
+  }
+  .slick-dots {
+    margin-top: 30px;
+  }
+  .slick-dots li {
+    margin: 0 10px;
   }
 }
 
@@ -1117,6 +1206,98 @@
     width: 520px;
     height: 350px;
   }
+  .certif::after {
+    position: absolute;
+    content: '';
+    width: 143px;
+    height: 105px;
+    bottom: -1%;
+    right: 25%;
+    background-image: url("../img/bg/dots.svg");
+    z-index: 1;
+  }
+  .slider__body {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+  .team__top {
+    margin-bottom: 35px;
+  }
+  .team__arrow button {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+  }
+  .team__bg {
+    padding: 10px 10px 0 10px;
+  }
+  .team__name {
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .team__work {
+    font-size: 11px;
+    line-height: 100%;
+  }
+  .team__sc {
+    margin: 0 12px 12px 0;
+  }
+  .sc__item + .sc__item {
+    margin-left: 12px;
+  }
+  .slider__reviews {
+    margin-top: 70px;
+  }
+  .reviews__title-top {
+    margin-bottom: 35px;
+  }
+  .reviews__title-top::after {
+    display: none;
+  }
+  .reviews__arrow button {
+    height: 36px;
+    width: 36px;
+  }
+  .reviews__arrow .slick-prev {
+    margin-right: 6px;
+  }
+  .reviews__arrow .slick-next {
+    margin-left: 6px;
+  }
+  .reviews__item {
+    padding: 30px 50px 30px 30px;
+  }
+  .reviews__img {
+    width: 125%;
+  }
+  .reviews__text {
+    font-size: 11px;
+    line-height: 135%;
+  }
+  .reviews__text::before {
+    top: 0;
+    background-repeat: no-repeat;
+    left: -25px;
+    background-size: 65%;
+  }
+  .reviews__info {
+    margin-top: 15px;
+    column-gap: 20px;
+    grid-template-columns: 40px 100px;
+  }
+  .reviews__name {
+    font-size: 12px;
+  }
+  .reviews__work {
+    font-size: 11px;
+  }
+  .slick-dots {
+    margin-top: 25px;
+  }
+  .slick-dots li {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1418,6 +1599,101 @@
     box-shadow: 0px 40px 40px -12.5px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     width: 350px;
     height: 220px;
+  }
+  .team__top {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .team__top h3 {
+    text-align: center;
+  }
+  .team__bg {
+    padding: 4px 4px 0 4px;
+  }
+  .team__bg img {
+    width: 100%;
+  }
+  .team__name {
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .team__work {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  .team__arrow {
+    margin-top: 25px;
+  }
+  .team__sc {
+    margin: 0 5px 5px 0;
+  }
+  .slider__reviews {
+    margin-top: 50px;
+  }
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slick-slide {
+    text-align: center;
+    margin: 0 7px;
+  }
+  .reviews__title-top {
+    margin-bottom: 35px;
+  }
+  .reviews__title-top::after {
+    display: none;
+  }
+  .reviews__arrow {
+    display: none;
+  }
+  .reviews__arrow button {
+    height: 30px;
+    width: 30px;
+  }
+  .reviews__arrow .slick-prev {
+    margin-right: 6px;
+  }
+  .reviews__arrow .slick-next {
+    margin-left: 6px;
+  }
+  .reviews__item {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+  }
+  .reviews__img {
+    display: none;
+    width: 105%;
+  }
+  .reviews__text {
+    font-size: 10px;
+    line-height: 135%;
+  }
+  .reviews__text::before {
+    top: 0;
+    background-repeat: no-repeat;
+    left: -17.5px;
+    background-size: 50%;
+  }
+  .reviews__info {
+    margin-top: 15px;
+    column-gap: 20px;
+    grid-template-columns: 40px 100px;
+  }
+  .reviews__name {
+    font-size: 12px;
+  }
+  .reviews__work {
+    font-size: 11px;
+  }
+  .slick-dots {
+    margin-top: 25px;
+  }
+  .slick-dots li {
+    margin: 0 10px;
   }
 }
 
