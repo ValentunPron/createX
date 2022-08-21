@@ -1,82 +1,10 @@
+import burger from './modules/burger';
+import tabs from './modules/tabs';
+import slider from './modules/slider';
+
 $(document).ready( () => {
-	// ---- Burger -----
-	$('.header__burger').click((event) => {
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock')
-		document.onkeydown = function(evt) {
-			if ("key" in evt) {
-				$('.header__burger, .header__menu').removeClass('active');
-				$('body').removeClass('lock')
-			}
-		};
-	})
-
-	// ---- Modal ----
-	function hideModal() {
-		$('.benefist__body').each((inxed, item) => {
-			item.classList.remove('active');
-			$('.benefist__button')[inxed].classList.remove('benefist__button--active')
-		})
-	}
-	function showModal(i = 0) {
-		$('.benefist__body')[i].classList.add('active');
-		$('.benefist__button')[i].classList.add('benefist__button--active')
-	}
-	hideModal();
-	showModal();
-
-	$('.benefist__button').click(e => {
-		console.log(e.currentTarget);
-		$('.benefist__button').each((i, btn) => {
-			if(e.currentTarget == btn) {
-				hideModal();
-				showModal(i)
-			}
-		})
-	})
-
-	// Slider 
-
-	// Team 
-	if(document.documentElement.clientWidth > 768) {
-		$('.team__list').slick(
-			{
-			prevArrow: $('.team__slick-prev'),
-			nextArrow: $('.team__slick-next'),
-			appendArrows: '.team__arrow',
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			variableWidth: false
-		  });
-	} else if(document.documentElement.clientWidth < 768 && document.documentElement.clientWidth > 500) {
-		$('.team__list').slick(
-			{
-			prevArrow: $('.team__slick-prev'),
-			nextArrow: $('.team__slick-next'),
-			appendArrows: '.team__arrow',
-			slidesToShow: 3,
-			slidesToScroll: 1,
-		  });
-	} else {
-		$('.team__list').slick(
-			{
-			prevArrow: $('.team__slick-prev'),
-			nextArrow: $('.team__slick-next'),
-			appendArrows: '.team__arrow',
-			slidesToShow: 2,
-			slidesToScroll: 1,
-		  });
-	}
-	  // reviews 
-	  $('.reviews__list').slick({
-		prevArrow: $('.reviews__slick-prev'),
-		nextArrow: $('.reviews__slick-next'),
-		dots: true,
-		appendDots:$('.reviews__dots'),
-		autoplay: true,
-		autoplaySpeed: 12000,
-		pauseOnFocus: false,
-		pauseOnHover: false,
-		speed: 500
-	  });
+	burger('.header__burger', '.header__menu');
+	tabs('.benefist__body', '.benefist__button', 'benefist__button--active');
+	slider('.team__list', '.team__slick-next', '.team__slick-prev', '.team__arrow', 'active', 'none')
+	slider('.reviews__list', '.reviews__slick-next', '.reviews__slick-prev', 'none', '.reviews__dots')
 })
