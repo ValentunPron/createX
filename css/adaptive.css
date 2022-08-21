@@ -1268,9 +1268,6 @@
   .reviews__item {
     padding: 30px 50px 30px 30px;
   }
-  .reviews__img {
-    width: 125%;
-  }
   .reviews__text {
     font-size: 11px;
     line-height: 135%;
@@ -1282,9 +1279,13 @@
     background-size: 65%;
   }
   .reviews__info {
+    display: block;
     margin-top: 15px;
     column-gap: 20px;
-    grid-template-columns: 40px 100px;
+    grid-template-columns: 100px;
+  }
+  .reviews__info img {
+    display: none;
   }
   .reviews__name {
     font-size: 12px;

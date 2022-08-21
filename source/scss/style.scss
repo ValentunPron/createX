@@ -1017,9 +1017,11 @@ a {
 		background-image: url('../img/bg/circles-full.svg');
 	}
 	&__body {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		z-index: 5;
 	}
 	&__arrow {
 		button {
@@ -1134,5 +1136,105 @@ a {
 	}
 }
 
+// ----- Post -----
+.post {
+	padding: 120px 0 180px 0;
+	color: #424551;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__body {
+		margin-top: 60px;
+	}
 
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		column-gap: 10px;
+		row-gap: 20px;
+	}
+
+	&__item {
+		max-width: 380px;
+		min-height: 100%;
+	}
+
+	&__bg {
+		position: relative;
+	}
+
+	&__img {
+	}
+
+	&__type {
+		position: absolute;
+		margin: 15px;
+		top: 0; left: 0;
+		padding: 4px 8px;
+		background: #FFFFFF;
+		border-radius: 4px;
+
+	}
+	&__filter {
+		display: block;
+		margin: 16px 0 12px 0;
+		color: #787A80;
+	}
+	&__filter-text {
+		display: inline;
+	}
+	&__calendar {
+		display: inline;
+
+	}
+	&__time {
+		display: inline;
+	}
+	&__line {
+		display: inline-block;
+		position: relative;
+		margin: auto 12px;
+		top: 0; bottom: 0;
+		width: 1.5px;
+		height: 12px;
+		background-color: #787A80;
+
+	}
+	&__description {
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 150%;
+		color: #1E212C;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 160%;
+		margin-bottom: 16px;
+	}
+
+	&__link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 160%;
+		color: #1E212C;
+		svg {
+			margin-left: 6px;
+		}
+	}
+}
+.container {
+}
+.subtitle {
+}
+.title {
+}
+.button {
+}
 
