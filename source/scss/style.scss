@@ -134,7 +134,6 @@ a {
 	position: relative;
 	font-weight: 900;
 	font-size: 46px;
-	line-height: 130%;
 	color: #1E212C;
 	z-index: 4;
 }
@@ -1148,7 +1147,9 @@ a {
 	&__body {
 		margin-top: 60px;
 	}
-
+	&__button {
+		line-height: 150%;
+	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -1170,21 +1171,32 @@ a {
 	}
 
 	&__type {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
 		position: absolute;
 		margin: 15px;
 		top: 0; left: 0;
 		padding: 4px 8px;
 		background: #FFFFFF;
 		border-radius: 4px;
+		img {
+			margin-right: 5px;
+		}
 
 	}
 	&__filter {
 		display: block;
 		margin: 16px 0 12px 0;
+		font-size: 14px;
 		color: #787A80;
+		span {
+			font-weight: 400;
+		}
 	}
 	&__filter-text {
 		display: inline;
+		font-weight: 700;
 	}
 	&__calendar {
 		display: inline;
@@ -1211,6 +1223,7 @@ a {
 		font-size: 20px;
 		line-height: 150%;
 		color: #1E212C;
+		margin-bottom: 12px;
 	}
 
 	&__text {
@@ -1224,17 +1237,19 @@ a {
 		font-size: 16px;
 		line-height: 160%;
 		color: #1E212C;
+		transition: all 0.3s ease 0s;
 		svg {
 			margin-left: 6px;
 		}
 	}
+	&__link:hover {
+		opacity: 0.5;
+		color: #FF3F3A;
+	}
+	&__link:focus {
+		opacity: 1;
+		color: #FF3F3A;
+	}
 }
-.container {
-}
-.subtitle {
-}
-.title {
-}
-.button {
-}
+
 

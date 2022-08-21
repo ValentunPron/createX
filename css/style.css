@@ -221,7 +221,6 @@ a {
   position: relative;
   font-weight: 900;
   font-size: 46px;
-  line-height: 130%;
   color: #1E212C;
   z-index: 4;
 }
@@ -1296,6 +1295,10 @@ a {
   margin-top: 60px;
 }
 
+.post__button {
+  line-height: 150%;
+}
+
 .post__list {
   display: flex;
   flex-wrap: wrap;
@@ -1314,6 +1317,9 @@ a {
 }
 
 .post__type {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
   position: absolute;
   margin: 15px;
   top: 0;
@@ -1323,14 +1329,24 @@ a {
   border-radius: 4px;
 }
 
+.post__type img {
+  margin-right: 5px;
+}
+
 .post__filter {
   display: block;
   margin: 16px 0 12px 0;
+  font-size: 14px;
   color: #787A80;
+}
+
+.post__filter span {
+  font-weight: 400;
 }
 
 .post__filter-text {
   display: inline;
+  font-weight: 700;
 }
 
 .post__calendar {
@@ -1357,6 +1373,7 @@ a {
   font-size: 20px;
   line-height: 150%;
   color: #1E212C;
+  margin-bottom: 12px;
 }
 
 .post__text {
@@ -1370,8 +1387,19 @@ a {
   font-size: 16px;
   line-height: 160%;
   color: #1E212C;
+  transition: all 0.3s ease 0s;
 }
 
 .post__link svg {
   margin-left: 6px;
+}
+
+.post__link:hover {
+  opacity: 0.5;
+  color: #FF3F3A;
+}
+
+.post__link:focus {
+  opacity: 1;
+  color: #FF3F3A;
 }
