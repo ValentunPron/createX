@@ -220,6 +220,7 @@ a {
 .title {
   position: relative;
   font-weight: 900;
+  z-index: 100%;
   font-size: 46px;
   color: #1E212C;
   z-index: 4;
@@ -1295,10 +1296,6 @@ a {
   margin-top: 60px;
 }
 
-.post__button {
-  line-height: 150%;
-}
-
 .post__list {
   display: flex;
   flex-wrap: wrap;
@@ -1402,4 +1399,43 @@ a {
 .post__link:focus {
   opacity: 1;
   color: #FF3F3A;
+}
+
+.mailing {
+  background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  padding: 120px 0 180px 0;
+  text-align: center;
+}
+
+.mailing__body {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.mailing__top {
+  margin-bottom: 60px;
+}
+
+.mailing__form {
+  margin: 0 auto;
+}
+
+.form__input {
+  padding: 16px 16px 16px;
+  background: #FFFFFF;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  width: 422px;
+  margin-right: 24px;
+}
+
+.form__input::placeholder {
+  font-size: 16px;
+  line-height: 160%;
+  color: #9A9CA5;
+}
+
+.form__button {
+  padding-left: 40px;
+  padding-right: 40px;
 }
