@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./js/modules/scroll.js":
+/*!******************************!*\
+  !*** ./js/modules/scroll.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction scroll(button, selection) {\r\n\t$(button).click(() => {\r\n\t\t$('html, body').animate({\r\n\t\t\tscrollTop: $(selection).offset().top\r\n\t\t}, 2000);\r\n\t})\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scroll);\n\n//# sourceURL=webpack:///./js/modules/scroll.js?");
+
+/***/ }),
+
 /***/ "./js/modules/slider.js":
 /*!******************************!*\
   !*** ./js/modules/slider.js ***!
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/tabs */ \"./js/modules/tabs.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n\r\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_tabs__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.benefist__body', '.benefist__button', 'benefist__button--active');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.team__list', '.team__slick-next', '.team__slick-prev', '.team__arrow', 'active', 'none')\r\n\t;(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.reviews__list', '.reviews__slick-next', '.reviews__slick-prev', 'none', '.reviews__dots')\r\n})\r\n\n\n//# sourceURL=webpack:///./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/tabs */ \"./js/modules/tabs.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scroll */ \"./js/modules/scroll.js\");\n\r\n\r\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_tabs__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.benefist__body', '.benefist__button', 'benefist__button--active');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.team__list', '.team__slick-next', '.team__slick-prev', '.team__arrow', 'active', 'none');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.reviews__list', '.reviews__slick-next', '.reviews__slick-prev', 'none', '.reviews__dots');\r\n\t(0,_modules_scroll__WEBPACK_IMPORTED_MODULE_3__[\"default\"])('.footer__bottom-button', '.header')\r\n})\r\n\n\n//# sourceURL=webpack:///./js/script.js?");
 
 /***/ })
 

@@ -787,7 +787,19 @@
 			margin-bottom: 55px;
 		}
 	}
-	
+	.mailing::after {
+		background-size: 90%;
+		width: 300px;
+		height: 200px;
+		bottom: -20px;
+	}
+	.mailing::before {
+		background-size: 90%;
+		width: 300px;
+		height: 200px;
+		right: -30px;
+		bottom: -20px;
+	}
 	.form {
 		&__input {
 			padding: 13px 16px 13px;
@@ -1288,6 +1300,12 @@
 			display: inline-flex;
 		
 		}
+	}
+	.mailing::after {
+		display: none;
+	}
+	.mailing::before {
+		display: none;
 	}
 	.form {
 		&__input {
