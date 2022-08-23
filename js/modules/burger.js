@@ -3,7 +3,7 @@ function burger(burgerItem, burgerMenu) {
 		$(`${burgerItem}, ${burgerMenu}`).toggleClass('active');
 		$('body').toggleClass('lock')
 		document.onkeydown = function(evt) {
-			if ("key" in evt) {
+			if (evt.keyCode === 27) {
 				$(`${burgerItem}, ${burgerMenu}`).removeClass('active');
 				$('body').removeClass('lock')
 			}

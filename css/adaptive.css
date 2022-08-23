@@ -770,6 +770,75 @@
     line-height: 160%;
     color: #9A9CA5;
   }
+  .sign__content {
+    position: relative;
+    padding: 35px;
+    z-index: 6;
+  }
+  .sign__close {
+    padding: 8px;
+    right: 19px;
+    top: 19px;
+  }
+  .sign__form {
+    max-width: 340px;
+  }
+  .sign__title {
+    font-size: 24px;
+  }
+  .sign__text {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .sign__input {
+    margin-top: 6px;
+    padding: 12px 12px 12px;
+    margin-right: 0px;
+    max-width: 340px;
+    margin-bottom: -5px;
+  }
+  .sign__input::placeholder {
+    font-size: 14px;
+  }
+  .sign__bottom-button {
+    margin-top: 16px;
+  }
+  .sign__bottom {
+    margin-top: 40px;
+  }
+  .sign__bottom .sign__text {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .sign__bottom::after {
+    position: absolute;
+    content: '';
+    width: 412px;
+    height: 1px;
+    right: -36px;
+    top: -22px;
+    background-color: #E5E8ED;
+  }
+  .sign__checkbox {
+    margin-right: 10px;
+  }
+  .sign__link {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .sign__button {
+    margin-top: 20px;
+  }
+  .sign__list {
+    margin-top: 16px;
+  }
+  .sign__item {
+    margin-right: 18px;
+  }
+  .sign__item:last-child {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1811,6 +1880,35 @@
     font-size: 12px;
     line-height: 150%;
   }
+  .sign__input {
+    margin-top: 6px;
+    padding: 12px 100px 12px 12px;
+    margin-right: 0px;
+    width: 340px;
+    margin-bottom: -5px;
+  }
+  .sign__input::placeholder {
+    font-size: 14px;
+  }
+  .sign__bottom-button {
+    margin-top: 16px;
+  }
+  .sign__bottom {
+    margin-top: 40px;
+  }
+  .sign__bottom .sign__text {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .sign__bottom::after {
+    position: absolute;
+    content: '';
+    width: 410px;
+    height: 1px;
+    right: -35px;
+    top: -22px;
+    background-color: #E5E8ED;
+  }
 }
 
 @media (max-width: 540px) {
@@ -2333,6 +2431,38 @@
   .footer__bottom-button {
     font-size: 10px;
     line-height: 150%;
+  }
+  .sign__form {
+    width: 275px;
+  }
+  .sign__input {
+    margin-top: 6px;
+    padding: 12px 12px 12px;
+    margin-right: 0px;
+    width: 275px;
+    margin-bottom: -5px;
+  }
+  .sign__input::placeholder {
+    font-size: 14px;
+  }
+  .sign__bottom-button {
+    margin-top: 16px;
+  }
+  .sign__bottom {
+    margin-top: 40px;
+  }
+  .sign__bottom .sign__text {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .sign__bottom::after {
+    position: absolute;
+    content: '';
+    width: 347px;
+    height: 1px;
+    right: -36px;
+    top: -22px;
+    background-color: #E5E8ED;
   }
 }
 
