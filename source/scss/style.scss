@@ -1342,23 +1342,30 @@ a {
 	}
 
 	&__sc-item {
-		display: inline;
+		display: inline-block;
+		margin-bottom: 10px;
 		margin-right: 20px;
+		text-align: center;
 		opacity: 0.5;
 		transition: all 0.2s ease-in-out 0s;
 	}
 	&__sc-item:hover {
 		opacity: 1;
 	}
+	&__sc-item:last-child {
+		margin-right: 0;
+	}
 
 	&__menu {
 		display: flex;
 		justify-content: space-between;
+		div {
+			margin-right: 15px;
+		}
+		div:last-child {
+			margin-right: 0;
+		}
 	}
-
-	&__map {
-	}
-
 	&__title {
 		font-weight: 700;
 		font-size: 16px;
@@ -1467,23 +1474,6 @@ a {
 		opacity: 0.6;
 	}
 }
-.container {
-}
-.logo {
 
-	&__link {
-	}
-
-	&__img {
-	}
-}
-.mailing {
-
-	&__form {
-		
-	}
-}
-.while {
-}
 
 

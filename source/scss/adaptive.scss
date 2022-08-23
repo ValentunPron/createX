@@ -280,6 +280,85 @@
 			}
 		}
 	}
+	.footer {
+		padding-top: 55px;
+		&__body {
+			margin-top: 20px;
+			margin-bottom: 60px;
+			grid-template-columns: 210px 1fr 210px;
+			gap: 45px;
+		}
+		&__text {
+			margin-top: 25px;
+			font-size: 11px;
+			line-height: 140%;
+		}
+	
+		&__list-sc {
+			margin-top: 39px;
+		}
+	
+		&__sc-item {
+			margin-right: 14px;
+			opacity: 0.5;
+		}
+		&__title {
+			font-size: 14px;
+			line-height: 150%;
+		}
+	
+		&__list {
+			margin-top: 12px;
+		}
+	
+		&__item {
+			padding: 6px 0;
+		}
+	
+		&__link {
+			font-size: 14px;
+			svg {
+				position: relative;
+				width: 13px;
+				height: 13px;
+				margin-right: 8px;
+			}
+		}
+		&__form {
+			margin-top: 20px;
+		}
+		&__input {
+			padding: 10px 12px 10px;
+			width: 100%;
+			font-size: 12px;
+		}
+		&__buttun {
+			margin-right: 14px;
+		}
+		&__input::placeholder {
+			font-size: 12px;
+			line-height: 150%;
+		}
+		&__mini-text {
+			margin-top: 15px;
+			font-size: 10px;
+			line-height: 150%;
+		}
+		&__bottom-body {
+			padding: 20px 0;
+		}
+		&__bottom-text {
+			font-size: 12px;
+			line-height: 150%;
+			img {
+				margin: 0 4px;
+			}
+		}
+		&__bottom-button {
+			font-size: 14px;
+			line-height: 150%;
+		}
+	}
 }
 @media(max-width: 1100px) {
 	.header {
@@ -1319,6 +1398,87 @@
 			color: #9A9CA5;
 		}
 	}
+	.footer {
+		padding-top: 40px;
+		&__body {
+			margin-top: 15px;
+			margin-bottom: 50px;
+			grid-template-columns: 180px 1fr 180px;
+			gap: 35px;
+		}
+		&__text {
+			margin-top: 20px;
+			font-size: 10px;
+			line-height: 140%;
+		}
+	
+		&__list-sc {
+			margin-top: 25px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 10px;
+		}
+	
+		&__sc-item {
+			margin-right: 0px;
+		}
+		&__title {
+			font-size: 12px;
+			line-height: 140%;
+		}
+	
+		&__list {
+			margin-top: 10px;
+		}
+	
+		&__item {
+			padding: 5px 0;
+		}
+	
+		&__link {
+			font-size: 12px;
+			svg {
+				position: relative;
+				width: 13px;
+				height: 13px;
+				margin-right: 5px;
+			}
+		}
+		&__form {
+			margin-top: 20px;
+		}
+		&__input {
+			padding: 6px 8px 6px;
+			width: 100%;
+			font-size: 10px;
+		}
+		&__buttun {
+			margin-right: 10px;
+		}
+		&__input::placeholder {
+			font-size: 10px;
+			line-height: 150%;
+		}
+		&__mini-text {
+			margin-top: 10px;
+			font-size: 9px;
+			line-height: 150%;
+		}
+		&__bottom-body {
+			padding: 20px 0;
+		}
+		&__bottom-text {
+			font-size: 12px;
+			line-height: 150%;
+			img {
+				margin: 0 4px;
+			}
+		}
+		&__bottom-button {
+			font-size: 14px;
+			line-height: 150%;
+		}
+	}
 }
 @media(max-width: 769px) {
 	.header__list {
@@ -1821,6 +1981,103 @@
 			width: 154px;
 		}
 	}
+	.footer {
+		padding-top: 30px;
+		&__body {
+			margin-top: 15px;
+			margin-bottom: 50px;
+			display: block;
+			text-align: center;
+			div {
+				margin-bottom: 20px;
+			}
+		}
+		&__logo {
+			width: 200px;
+			height: 66px;
+		}
+		&__text {
+			margin-top: 20px;
+			font-size: 10px;
+			line-height: 140%;
+		}
+	
+		&__list-sc {
+			margin-top: 25px;
+			display: inline-block;
+			justify-content: center;
+		}
+		&__sc-item {
+			margin-right: 30px;
+		}
+		&__title {
+			text-align: left;
+			font-size: 16px;
+			line-height: 140%;
+		}
+	
+		&__list {
+			text-align: left;
+			margin-top: 10px;
+		}
+	
+		&__item {
+			padding: 5px 0;
+		}
+		&__sing-up {
+			text-align: center;
+			h3 {
+				text-align: center;
+			}
+		}
+		&__link {
+			font-size: 16px;
+			svg {
+				position: relative;
+				width: 13px;
+				height: 13px;
+				margin-right: 5px;
+			}
+		}
+		&__form {
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 20px;
+			width: 300px;
+		}
+		&__input {
+			padding: 6px 8px 6px;
+			font-size: 10px;
+			margin: 0 auto;
+
+		}
+		&__buttun {
+			margin-right: 10px;
+		}
+		&__input::placeholder {
+			font-size: 10px;
+			line-height: 150%;
+		}
+		&__mini-text {
+			margin-top: 10px;
+			font-size: 9px;
+			line-height: 150%;
+		}
+		&__bottom-body {
+			padding: 15px 0;
+		}
+		&__bottom-text {
+			font-size: 10px;
+			line-height: 150%;
+			img {
+				margin: 0 4px;
+			}
+		}
+		&__bottom-button {
+			font-size: 12px;
+			line-height: 150%;
+		}
+	}
 }
 @media(max-width: 540px) {
 	.container {
@@ -2303,6 +2560,108 @@
 			margin: 0 auto;
 			padding: 5px 0;
 			width: 154px;
+		}
+	}
+	.footer {
+		padding-top: 20px;
+		&__body {
+			margin-top: 10px;
+			margin-bottom: 50px;
+			display: block;
+			text-align: center;
+			div {
+				margin-bottom: 20px;
+			}
+		}
+		&__logo {
+			width: 120px;
+			height: 30px;
+		}
+		&__text {
+			margin-top: 10px;
+			font-size: 10px;
+			line-height: 140%;
+		}
+	
+		&__list-sc {
+			margin-top: 15px;
+			display: inline-block;
+			justify-content: center;
+		}
+		&__sc-item {
+			margin-right: 30px;
+		}
+		&__title {
+			text-align: left;
+			font-size: 12px;
+			line-height: 140%;
+		}
+	
+		&__list {
+			text-align: left;
+			margin-top: 10px;
+		}
+	
+		&__item {
+			padding: 5px 0;
+		}
+		&__sing-up {
+			text-align: center;
+			h3 {
+				text-align: center;
+			}
+		}
+		&__link {
+			font-size: 12px;
+			svg {
+				position: relative;
+				width: 13px;
+				height: 13px;
+				margin-right: 5px;
+			}
+		}
+		&__form {
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 20px;
+			width: 200px;
+		}
+		&__input {
+			padding: 6px 8px 6px;
+			font-size: 10px;
+			margin: 0 auto;
+
+		}
+		&__buttun {
+			margin-right: 10px;
+		}
+		&__input::placeholder {
+			font-size: 10px;
+			line-height: 150%;
+		}
+		&__mini-text {
+			margin-top: 10px;
+			font-size: 9px;
+			line-height: 150%;
+		}
+		&__bottom-body {
+			padding: 15px 0;
+		}
+		&__bottom-text {
+			font-size: 8px;
+			line-height: 150%;
+			span {
+				width: 10px;
+				height: 10px;
+			}
+			img {
+				
+				margin: 0 4px;
+			}
+		}
+		&__bottom-button {
+			font-size: 10px;
+			line-height: 150%;
 		}
 	}
 }
