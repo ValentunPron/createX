@@ -589,12 +589,23 @@
     width: 520px;
     height: 365px;
   }
+  .certif.courses-fix {
+    position: static;
+    margin: 0;
+    padding: 100px 0;
+  }
   .slider__body {
     padding-top: 130px;
     padding-bottom: 80px;
   }
   .slider__team::after {
     display: none;
+  }
+  .slider__content {
+    padding: 65px 0;
+  }
+  .slider__reviews {
+    margin-top: 140px;
   }
   .team__top {
     margin-bottom: 50px;
@@ -624,9 +635,6 @@
   }
   .sc__item + .sc__item {
     margin-left: 12.5px;
-  }
-  .slider__reviews {
-    margin-top: 140px;
   }
   .reviews__title-top {
     position: relative;
@@ -1104,9 +1112,17 @@
     width: 400px;
     height: 300px;
   }
+  .certif.courses-fix {
+    position: static;
+    margin: 0;
+    padding: 90px 0;
+  }
   .slider__body {
     padding-top: 100px;
     padding-bottom: 70px;
+  }
+  .slider__reviews {
+    margin-top: 100px;
   }
   .team__top {
     margin-bottom: 45px;
@@ -1133,9 +1149,6 @@
   }
   .sc__item + .sc__item {
     margin-left: 12.5px;
-  }
-  .slider__reviews {
-    margin-top: 100px;
   }
   .reviews__title-top {
     position: relative;
@@ -1665,6 +1678,11 @@
     width: 520px;
     height: 350px;
   }
+  .certif.courses-fix {
+    position: static;
+    margin: 0;
+    padding: 85px 0;
+  }
   .certif::after {
     position: absolute;
     content: '';
@@ -1678,6 +1696,12 @@
   .slider__body {
     padding-top: 140px;
     padding-bottom: 50px;
+  }
+  .slider__reviews {
+    margin-top: 70px;
+  }
+  .slider__content {
+    padding: 60px 0;
   }
   .team__top {
     margin-bottom: 35px;
@@ -1704,9 +1728,6 @@
   }
   .sc__item + .sc__item {
     margin-left: 12px;
-  }
-  .slider__reviews {
-    margin-top: 70px;
   }
   .reviews__title-top {
     margin-bottom: 35px;
@@ -1913,6 +1934,7 @@
 
 @media (max-width: 540px) {
   .container {
+    max-width: 1250px;
     padding: 0 10px;
   }
   .header__item {
@@ -2082,6 +2104,11 @@
     width: 1.5px;
     height: 14px;
   }
+  .certif.courses-fix {
+    position: static;
+    margin: 0;
+    padding: 60px 0;
+  }
   .courses-top {
     display: flex;
     flex-direction: column;
@@ -2243,6 +2270,9 @@
   }
   .slider__reviews {
     margin-top: 50px;
+  }
+  .slider__content {
+    padding: 50px 0;
   }
   .slick-track {
     display: flex;
@@ -2468,6 +2498,7 @@
 
 @media (max-width: 374px) {
   .container {
+    max-width: 1246px;
     padding: 0 8px;
   }
   .header__menu {

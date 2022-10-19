@@ -1,0 +1,19 @@
+//---Подключение других библиотек---//
+@import "nullstyle.scss";
+//-------------------------------------
+@import '_global.scss';
+@import '_fonts.scss';
+//-------------------------------------
+//---Глобалыние стили---//
+
+// ----- header  and footer -----
+@import '_header.scss';
+@import '_footer.scss';
+// ----- Courses ----- 
+@import '_courses.scss';
+// ------ html pages -----
+@import '_index.scss';
+@import '_sing-poput.scss';
+@import '_slider.scss';
+// ----- Adaptive -------
+@import '_adaptive.scss';

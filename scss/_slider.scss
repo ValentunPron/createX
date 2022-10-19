@@ -1,0 +1,320 @@
+// ----- Slider -----
+
+.sliders {
+	position: relative;
+	background: #F4F5F7;
+}
+.sliders::after {
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 208px;
+	bottom: -10px;
+	right: -30px;
+	background-image: url('../img/bg/circles.svg');
+	background-repeat: no-repeat;
+	transform: rotate(270deg);
+}
+.slider {
+		&__body {
+			position: relative;
+			padding-top: 166px;
+			padding-bottom: 100px;
+		}
+		&__team {
+			position: relative;
+			z-index: 5;
+		}
+		&__team::after {
+			content: '';
+			position: absolute;
+			top: -100px;
+			left: -100px;
+			width: 41px;
+			height: 41px;
+			background-image: url('../img/bg/shape.svg');
+		}
+}
+.team { 
+
+		&__top {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			margin-bottom: 60px;
+		}
+
+		&__arrow {
+			button {
+				position: relative;
+				background-color: transparent;
+				height: 50px;
+				width: 50px;
+				z-index: 10;
+				svg {
+					fill: #424551;
+				}
+			}
+			.slick-prev {
+				transition: all 0.4s ease;
+				svg {
+					transition: 0.3s;
+				}
+			}
+			.slick-next {
+				svg {
+					transition: 0.3s;
+					transform: rotate(-180deg);
+				}
+				transition: all 0.2s ease 0s;
+			}
+			.slick-next:hover, .slick-prev:hover {
+				background: #FF3F3A;
+				border-radius: 100%;
+				svg {
+					fill: #fff;
+				}
+			}
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}
+		&__bg {
+			position: relative;
+			background-color: #FFCF2D;
+			padding: 20px 20px 0 20px;
+			border-radius: 4px;
+			transition: all 0.5s ease 0s;
+			z-index: 2;
+			img {
+				position: relative;
+				z-index: 4;
+			}
+		}
+		&__bg::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+			border-radius: 4px;
+			transition: opacity 0.5s ease-out;
+			opacity: 0;
+			z-index: 4;
+		}
+		&__bg:hover {
+			.team__sc {
+				z-index: 5;
+				display: block;
+			}
+		}
+		&__bg:hover::after {
+			opacity: 1;
+			img {
+				z-index: 2;
+			}
+		}
+		&__name {
+			margin-top: 16px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+			color: #424551;
+		}
+		&__work {
+			font-size: 15.5px;
+			line-height: 160%;
+			color: #787A80;
+		}
+
+		&__sc {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin: 0 20px 20px 0;
+		}
+}
+.slick-track {
+	display: flex;
+	justify-content: space-between;
+}
+.slick-slide { 
+	text-align: center;
+	margin: 0 15px;
+}
+.team__bg img {
+	width: 100%;
+}
+.sc {
+
+		&__item {
+			display: inline;
+		}
+		&__item + &__item {
+			margin-left: 15px;
+		}
+
+		&__link {
+			svg {
+				fill: #a7a9ad;
+				transition: all 0.4s ease 0s;
+			}
+			svg:hover {
+				fill: #fff;
+			}
+		}
+}
+.slider {
+	&__reviews {
+		margin-top: 180px;
+		text-align: center;
+	}
+}
+.reviews {
+	&__title-top {
+		position: relative;
+		margin-bottom: 60px;
+	}
+	&__title-top::after {
+		position: absolute;
+		content: '';
+		width: 145px;
+		height: 145px;
+		top: -100px;
+		left: -200px;
+		background-image: url('../img/bg/circles-full.svg');
+	}
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 5;
+	}
+	&__arrow {
+		button {
+			position: relative;
+			background-color: transparent;
+			height: 50px;
+			width: 50px;
+			z-index: 10;
+			svg {
+				fill: #424551;
+			}
+		}
+		.slick-prev {
+			margin-right: 15px;
+			transition: all 0.4s ease;
+			svg {
+				transition: 0.3s;
+			}
+		}
+		.slick-next {
+			margin-left: 15px;
+			svg {
+				transition: 0.3s;
+				transform: rotate(-180deg);
+			}
+			transition: all 0.2s ease 0s;
+		}
+		.slick-next:hover, .slick-prev:hover {
+			background: #FF3F3A;
+			border-radius: 100%;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+	&__list {
+		background-color: #fff;
+		box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	&__item {
+		padding: 60px 90px 60px 160px;
+		text-align: left;
+	}
+
+	&__text {
+		position: relative;
+		font-size: 20px;
+		line-height: 150%;
+		color: #424551;
+	}
+	&__text::before {
+		content: '';
+		position: absolute;
+		width: 28px;
+		height: 20px;
+		top: 0;
+		left: -58px;
+		background-image: url('../img/slider/reviews/braces.svg');
+	}
+	&__info {
+		margin-top: 24px;
+		display: grid;
+		align-items: center;
+		column-gap: 20px;
+		grid-template-columns: 72px 151px;
+		grid-template-rows: 1fr 1fr;
+		
+	}
+
+	&__img {
+		border-radius: 100%;
+		grid-row: span 2;
+		margin-right: 20px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 160%;
+		color: #1E212C;
+	}
+
+	&__work {
+		font-size: 14px;
+		line-height: 150%;
+		color: #787A80;
+	}
+}
+.slick-dots {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	justify-content: center;
+	z-index: 15;
+	transition: all 0.2s ease-out;
+	button {
+		transition: all 0.2s ease-out;
+		font-size: 0px;
+		width: 30px;
+		height: 4px;
+		background: #B3B7BC;
+	}
+	li {
+		display: inline;
+		margin: 0 12px;
+	}
+	li.slick-active button{
+		background-color: #424551;
+	}
+}
+
+.slider__content {
+	padding: 70px 0;
+}
+.slider__content > .slider__reviews {
+	margin-top: 0px;
+}
