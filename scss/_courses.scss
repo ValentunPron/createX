@@ -73,7 +73,7 @@
 	&__number {
 		position: absolute;
 		top: 0;
-		margin-left: 5px;
+		margin-left: -1px;
 		font-weight: 900;
 		font-size: 10px;
 		line-height: 150%;
@@ -124,8 +124,113 @@
 		}
 	}
 	.filter {
+		&__list {
+			grid-template-columns: repeat(6, 1fr);
+		}
 		&__button {
-			padding: auto;
+			font-size: calc(11px + (16 - 11) * ((100vw - 540px) / (1260 - 540)) );
+			gap: calc(5px + (10 - 5) * ((100vw - 540px) / (1260 - 540)) );
+			padding: 10px 15px;
+		}
+	}
+	.course-big {
+		&__body {
+			grid-template-columns: 1fr 1fr;
+		}
+		&__link {
+			height: auto;
+		}
+		&__description {
+			display: inline-flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: calc(125px + (150 - 125) * ((100vw - 400px) / (1260 - 400)) );
+			width: 100%;
+			padding: calc(5px + (25 - 15) * ((100vw - 400px) / (1260 - 400)) );
+		}
+		.courses__type {
+			max-width: 100px;
+			text-align: center;
+			font-size: calc(12px + (14 - 12) * ((100vw - 540px) / (1260 - 540)) );
+		}
+		.courses__title {
+			font-size: calc(15px + (19 - 15) * ((100vw - 540px) / (1260 - 540)) );
+			margin-bottom: 10px;
+		}
+		.info {
+			margin-top: auto;
+		}
+		.courses__price {
+			font-size: calc(11px + (13 - 11) * ((100vw - 540px) / (1260 - 540)) );
+			margin-bottom: 10px;
+			margin-right: 2.5px;
+		}
+		.courses__name {
+			padding-left: 5px;
+			font-size: calc(11px + (13 - 11) * ((100vw - 540px) / (1260 - 540)) );
+			&::before {
+				width: 1.5px;
+			}
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.filter {
+		&__list {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 2.5px;
+		}
+		&__button {
+			padding: 7.5px 10px;
+		}
+	}
+	.form__search {
+		width: calc(280px + (320 - 280) * ((100vw - 320px) / (720 - 320)) );
+		padding: 12px 16px 12px;
+		padding-right: 32px;
+	}
+}
+
+@media (max-width: 374px) {
+	.filter {
+		&__list {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&__button {
+			padding: 10px 12.5px;
+		}
+	}
+	.course-big {
+		&__body {
+			grid-template-columns: 220px;
+			justify-content: center;
+		}
+		&__description {
+			display: block;
+			height: 100%;
+			padding: 20px 10px;
+		}
+		.courses__type {
+			max-width: 100%;
+			padding: 3px 7.5px;
+			font-size: 14px
+		}
+		.courses__title {
+			font-size: 16px;
+		}
+		.courses__price {
+			font-size: 14px;
+			margin-bottom: 10px;
+			margin-right: 2.5px;
+		}
+		.courses__name {
+			padding-left: 7.5px;
+			font-size: 14px;
+			&::before {
+				width: 1.5px;
+			}
 		}
 	}
 }

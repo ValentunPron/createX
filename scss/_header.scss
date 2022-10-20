@@ -1,6 +1,7 @@
 .header {
 	position: relative;
 	background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+	z-index: 10;
 	
 	&__body {
 		position: relative;
@@ -45,6 +46,7 @@
 		z-index: 10;
 	}
 	&__menu {
+		position: relative;
 		margin-left: 60px;
 	}
 	&__item {
@@ -58,10 +60,7 @@
 	&__link {
 		transition: all 0.25s ease-in-out;
 	}
-	&__link:hover {
-		color: #FF3F3A;
-	}
-	&__link:active {
+	&__link:hover, &__link:focus {
 		color: #FF3F3A;
 	}
 	&__login {
