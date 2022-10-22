@@ -1,4 +1,6 @@
-function filter() {
+import viewAll from "./viewAll";
+
+function filter(numberCourse = 9) {
 	const allItem = document.querySelectorAll('.course-big__item .courses__type'), 
 		  marketing = document.querySelectorAll('.course-big__description .marketing'),
 		  management = document.querySelectorAll('.course-big__description .management'),
@@ -14,16 +16,28 @@ function filter() {
 		document.querySelector('#development').textContent = `${development.length}`;
 	} 
 
+	let countD = numberCourse;
+
 	function hideCourse() {
 		document.querySelectorAll('.course-big__link').forEach(item => {
 			item.classList.add('hide');
 		})
 	}
 	
-	function showCourse() {
-		document.querySelectorAll('.course-big__link').forEach(item => {
-			item.classList.remove('hide');
-		})
+	function showCourse(step = -1) {
+		if (step > 0) {
+			document.querySelectorAll('.course-big__link').forEach((item, index) => {
+				if (step >= index) {
+					console.log(item);
+					console.log(index);
+					item.classList.remove('hide');
+				}
+			})
+		} else {
+			document.querySelectorAll('.course-big__link').forEach(item => {
+				item.classList.remove('hide');
+			})
+		}
 	}
 
 	function hideActiveButton() {
@@ -36,6 +50,7 @@ function filter() {
 	showCourse(); 
 	numberFilter();
 	
+	
 	const filterButtuns = document.querySelectorAll('.filter__button');
 	filterButtuns.forEach(button => {
 		button.addEventListener('click', (e) => {
@@ -45,21 +60,20 @@ function filter() {
 			document.querySelectorAll('.course-big__link').forEach(item => {
 				if(item.querySelector('.course-big__description .courses__type').classList.contains(button.value)) {
 					item.classList.remove('hide');
+					document.querySelector('#viem-all').style.display = 'none';
 				} else if (button.value == 'all') {
-					showCourse();
+					showCourse(countD - 1);
+					document.querySelector('#viem-all').style.display = 'flex';
 				}
 			})
 		})
 	})
-
 	// --- search ---
 	const searchInput = document.querySelector('.form__search'),
 		  searchButton = document.querySelector('.form__search-button');
 	
 	searchInput.addEventListener('input' , e => {
-		console.log(e.target.value);
 		document.querySelectorAll('.course-big__link').forEach(item => {
-
 		})
 	})
 }

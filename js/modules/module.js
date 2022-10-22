@@ -3,7 +3,7 @@ function module(button, window, windowBody, buttonClose) {
 		$('.sign').removeClass('active');
 		$('.sign-up').removeClass('active');
 		$(window).toggleClass('active');
-		$('body').toggleClass('lock')
+		$('body').toggleClass('lock');
 		document.onkeydown = function(evt) {
 			if (evt.keyCode === 27) {
 				$(window).removeClass('active');
