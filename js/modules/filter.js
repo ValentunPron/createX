@@ -68,14 +68,6 @@ function filter(numberCourse = 9) {
 			})
 		})
 	})
-	// --- search ---
-	const searchInput = document.querySelector('.form__search'),
-		  searchButton = document.querySelector('.form__search-button');
-	
-	searchInput.addEventListener('input' , e => {
-		document.querySelectorAll('.course-big__link').forEach(item => {
-		})
-	})
 }
 
 export default filter

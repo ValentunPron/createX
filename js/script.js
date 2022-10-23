@@ -4,8 +4,8 @@ import tabs from './modules/tabs';
 import slider from './modules/slider';
 import scroll from './modules/scroll';
 import passwordView from './modules/passwordView';
-import filter from './modules/filter';
-import viemAll from './modules/viewAll';
+import search from './modules/search';
+import adaptiveCourse from './modules/adaptiveCourse';
 
 $(document).ready( () => {
 	// Burger
@@ -32,12 +32,10 @@ $(document).ready( () => {
 		scroll('.footer__bottom-button', '.header');
 	}
 	// ---- Course page
-	let step = 9;
-	if(document.querySelector('.filter__list')) {
-		filter(step);
-	}
-	if(document.querySelector('.filter__list')) {
-		viemAll(step);
+	adaptiveCourse();
+	window.addEventListener("resize", adaptiveCourse);
+	if(document.querySelector('.form__search')) {
+		search();
 	}
 })
 
