@@ -19,7 +19,7 @@ function adaptiveCourse() {
 			viewAll(step);
 		}
 	} else {
-		step = 4;
+		step = 3;
 		if(document.querySelector('.filter__list')) {
 			filter(step);
 		}
